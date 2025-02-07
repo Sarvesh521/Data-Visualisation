@@ -1,0 +1,70 @@
+import xarray as xr
+import matplotlib.pyplot as plt
+import cartopy.crs as ccrs
+import numpy as np
+from matplotlib.animation import FuncAnimation, PillowWriter
+
+th_path = '../data/th_2001.nc'
+vs_path = '../data/vs_2001.nc'
+
+SKIP = 30
+ARROW_LENGTH = 1  # Set a constant length for all arrows
+OUTPUT_PATH = "../outputs/constant_length_arrows1.gif"
+
+# Function to convert wind direction to U and V vector components with constant length
+def wind_components_constant_length(direction):
+    rad = np.deg2rad(direction)
+    # u: eastward, v: northward
+    u = ARROW_LENGTH * np.cos(rad)  # Normalize U component
+    v = ARROW_LENGTH * np.sin(rad)  # Normalize V component
+    return u, v
+
+# Function to update quiver for each frame in the animation
+def update_quiver(day_idx):
+    ax.set_title(f"Wind Vectors on {np.datetime_as_string(dates[selected_indices[day_idx]], unit='D')}")
+
+    # Convert wind direction to U, V components with constant length for the current day, with downsampling
+    u, v = wind_components_constant_length(wind_direction[selected_indices[day_idx]][::SKIP, ::SKIP])
+
+    # Update quiver plot
+    qv.set_UVC(u, v)
+    return qv,
+
+# Open the netCDF files
+th_data = xr.open_dataset(th_path)
+vs_data = xr.open_dataset(vs_path)
+
+# Extract necessary data
+lat = th_data['lat'].values
+lon = th_data['lon'].values
+dates = th_data['day'].values
+wind_direction = th_data['wind_from_direction']
+
+# Filter dates for January to March and select 1st, 15th, and 28th of each month
+selected_days = [
+    np.datetime64(f'2001-01-{day:02d}') for day in [10, 20, 30]
+] + [
+    np.datetime64(f'2001-02-{day:02d}') for day in [10, 20, 28]
+] + [
+    np.datetime64(f'2001-03-{day:02d}') for day in [10, 20, 28]
+]
+selected_indices = [np.where(dates == day)[0][0] for day in selected_days]
+
+# Initialize the plot
+fig, ax = plt.subplots(figsize=(10, 6), subplot_kw={'projection': ccrs.PlateCarree()})
+ax.coastlines()
+ax.set_extent([-125, -67, 25, 50])  # Extent covering the US
+
+lon_ds = lon[::SKIP]
+lat_ds = lat[::SKIP]
+lon_grid, lat_grid = np.meshgrid(lon_ds, lat_ds)
+
+# Use the first selected day's data to initialize the quiver plot with constant arrow length
+u, v = wind_components_constant_length(wind_direction[selected_indices[0]][::SKIP, ::SKIP])
+qv = ax.quiver(lon_grid, lat_grid, u, v, scale=60, transform=ccrs.PlateCarree())  # Adjust scale for visibility
+
+# Create the animation with only the selected days
+anim = FuncAnimation(fig, update_quiver, frames=len(selected_indices), interval=500, blit=True)
+
+# Save the animation as a GIF
+anim.save(OUTPUT_PATH, writer=PillowWriter(fps=2))
