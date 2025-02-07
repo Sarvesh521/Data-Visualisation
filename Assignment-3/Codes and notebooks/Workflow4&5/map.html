@@ -1,0 +1,927 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_4caaab6bb371d1720f249072f2f7c13d {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_4caaab6bb371d1720f249072f2f7c13d" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_4caaab6bb371d1720f249072f2f7c13d = L.map(
+                "map_4caaab6bb371d1720f249072f2f7c13d",
+                {
+                    center: [34.08245318089941, -118.36043258258678],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "maxBounds": null,
+  "zoom": 11,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_34b15c24fdc60abb420dad3064a7a14a = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_34b15c24fdc60abb420dad3064a7a14a.addTo(map_4caaab6bb371d1720f249072f2f7c13d);
+        
+    
+            var marker_a2a8c829f5854a837f952992acdd5947 = L.marker(
+                [33.977689512593045, -118.29727087624487],
+                {
+  "draggable": null,
+  "autoPan": null,
+}
+            ).addTo(map_4caaab6bb371d1720f249072f2f7c13d);
+        
+    
+            var icon_9d79af94fac5c4ebcf270413e41a01c9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_a2a8c829f5854a837f952992acdd5947.setIcon(icon_9d79af94fac5c4ebcf270413e41a01c9);
+        
+    
+        var popup_01fdde49ede0ac5ea4c3b4355ba6b5d7 = L.popup({
+  "maxWidth": "100%",
+  "autoClose": null,
+  "closeOnClick": null,
+});
+
+        
+            
+                var html_d2abae802c1c4d719f71337a80e07f45 = $(`<div id="html_d2abae802c1c4d719f71337a80e07f45" style="width: 100.0%; height: 100.0%;">Area Name: 77th Street, Cluster: 2</div>`)[0];
+                popup_01fdde49ede0ac5ea4c3b4355ba6b5d7.setContent(html_d2abae802c1c4d719f71337a80e07f45);
+            
+        
+
+        marker_a2a8c829f5854a837f952992acdd5947.bindPopup(popup_01fdde49ede0ac5ea4c3b4355ba6b5d7)
+        ;
+
+        
+    
+    
+            var marker_36b7e163bdd4fe7b391827229c2b7a63 = L.marker(
+                [34.047488817714516, -118.25065542427836],
+                {
+  "draggable": null,
+  "autoPan": null,
+}
+            ).addTo(map_4caaab6bb371d1720f249072f2f7c13d);
+        
+    
+            var icon_965204be1ef480dbfb88e7fe3f0f4345 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_36b7e163bdd4fe7b391827229c2b7a63.setIcon(icon_965204be1ef480dbfb88e7fe3f0f4345);
+        
+    
+        var popup_ad304d4f150874ba1d562cd95b5506da = L.popup({
+  "maxWidth": "100%",
+  "autoClose": null,
+  "closeOnClick": null,
+});
+
+        
+            
+                var html_0772d722599c11f20ec538247b492943 = $(`<div id="html_0772d722599c11f20ec538247b492943" style="width: 100.0%; height: 100.0%;">Area Name: Central, Cluster: 1</div>`)[0];
+                popup_ad304d4f150874ba1d562cd95b5506da.setContent(html_0772d722599c11f20ec538247b492943);
+            
+        
+
+        marker_36b7e163bdd4fe7b391827229c2b7a63.bindPopup(popup_ad304d4f150874ba1d562cd95b5506da)
+        ;
+
+        
+    
+    
+            var marker_81270bdd3b47aaf8364c984fb91e4cf2 = L.marker(
+                [34.25029173700921, -118.53901331474741],
+                {
+  "draggable": null,
+  "autoPan": null,
+}
+            ).addTo(map_4caaab6bb371d1720f249072f2f7c13d);
+        
+    
+            var icon_df5e93058f5b98e2f60c60fdb901ab64 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_81270bdd3b47aaf8364c984fb91e4cf2.setIcon(icon_df5e93058f5b98e2f60c60fdb901ab64);
+        
+    
+        var popup_3838756d5d2c2fb97233db5c03e15934 = L.popup({
+  "maxWidth": "100%",
+  "autoClose": null,
+  "closeOnClick": null,
+});
+
+        
+            
+                var html_6c46bcb26bc846b9839f47757f20f73b = $(`<div id="html_6c46bcb26bc846b9839f47757f20f73b" style="width: 100.0%; height: 100.0%;">Area Name: Devonshire, Cluster: 0</div>`)[0];
+                popup_3838756d5d2c2fb97233db5c03e15934.setContent(html_6c46bcb26bc846b9839f47757f20f73b);
+            
+        
+
+        marker_81270bdd3b47aaf8364c984fb91e4cf2.bindPopup(popup_3838756d5d2c2fb97233db5c03e15934)
+        ;
+
+        
+    
+    
+            var marker_31c2ba526a3ef22569ec0231981bb99c = L.marker(
+                [34.248843901814574, -118.37879082151886],
+                {
+  "draggable": null,
+  "autoPan": null,
+}
+            ).addTo(map_4caaab6bb371d1720f249072f2f7c13d);
+        
+    
+            var icon_db1346cbf1fd74b8c171e21a2a72944e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "black",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_31c2ba526a3ef22569ec0231981bb99c.setIcon(icon_db1346cbf1fd74b8c171e21a2a72944e);
+        
+    
+        var popup_283a2d8a17d8e74f82c7f6fcbd0a9c66 = L.popup({
+  "maxWidth": "100%",
+  "autoClose": null,
+  "closeOnClick": null,
+});
+
+        
+            
+                var html_bbcca8333002c22f41d381aa5b221f72 = $(`<div id="html_bbcca8333002c22f41d381aa5b221f72" style="width: 100.0%; height: 100.0%;">Area Name: Foothill, Cluster: 3</div>`)[0];
+                popup_283a2d8a17d8e74f82c7f6fcbd0a9c66.setContent(html_bbcca8333002c22f41d381aa5b221f72);
+            
+        
+
+        marker_31c2ba526a3ef22569ec0231981bb99c.bindPopup(popup_283a2d8a17d8e74f82c7f6fcbd0a9c66)
+        ;
+
+        
+    
+    
+            var marker_1d5277718d81f8ea9a922b62eb5b8edf = L.marker(
+                [33.77135925134515, -118.28536245398142],
+                {
+  "draggable": null,
+  "autoPan": null,
+}
+            ).addTo(map_4caaab6bb371d1720f249072f2f7c13d);
+        
+    
+            var icon_0f975e9fa22316a7f91151b1cb52091c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_1d5277718d81f8ea9a922b62eb5b8edf.setIcon(icon_0f975e9fa22316a7f91151b1cb52091c);
+        
+    
+        var popup_33e3e96cd5c43ac9c9974ac2272df465 = L.popup({
+  "maxWidth": "100%",
+  "autoClose": null,
+  "closeOnClick": null,
+});
+
+        
+            
+                var html_43f57600a5887b9736f8332ea5c55996 = $(`<div id="html_43f57600a5887b9736f8332ea5c55996" style="width: 100.0%; height: 100.0%;">Area Name: Harbor, Cluster: 0</div>`)[0];
+                popup_33e3e96cd5c43ac9c9974ac2272df465.setContent(html_43f57600a5887b9736f8332ea5c55996);
+            
+        
+
+        marker_1d5277718d81f8ea9a922b62eb5b8edf.bindPopup(popup_33e3e96cd5c43ac9c9974ac2272df465)
+        ;
+
+        
+    
+    
+            var marker_9315d5f4817a1753045e58c6bc637f68 = L.marker(
+                [34.05425537178113, -118.20333208875243],
+                {
+  "draggable": null,
+  "autoPan": null,
+}
+            ).addTo(map_4caaab6bb371d1720f249072f2f7c13d);
+        
+    
+            var icon_6a6d07510ace57f7729b294395157c61 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "black",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_9315d5f4817a1753045e58c6bc637f68.setIcon(icon_6a6d07510ace57f7729b294395157c61);
+        
+    
+        var popup_594fdcef8750e665295daf6afbc0d063 = L.popup({
+  "maxWidth": "100%",
+  "autoClose": null,
+  "closeOnClick": null,
+});
+
+        
+            
+                var html_3e99fe8073612aca03557e61d3a1b41a = $(`<div id="html_3e99fe8073612aca03557e61d3a1b41a" style="width: 100.0%; height: 100.0%;">Area Name: Hollenbeck, Cluster: 3</div>`)[0];
+                popup_594fdcef8750e665295daf6afbc0d063.setContent(html_3e99fe8073612aca03557e61d3a1b41a);
+            
+        
+
+        marker_9315d5f4817a1753045e58c6bc637f68.bindPopup(popup_594fdcef8750e665295daf6afbc0d063)
+        ;
+
+        
+    
+    
+            var marker_98ec9f0ee164ed66edb5c24778a8292d = L.marker(
+                [34.099343109922856, -118.32966132291115],
+                {
+  "draggable": null,
+  "autoPan": null,
+}
+            ).addTo(map_4caaab6bb371d1720f249072f2f7c13d);
+        
+    
+            var icon_e8e74fe5b2786071d41552712adc306b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_98ec9f0ee164ed66edb5c24778a8292d.setIcon(icon_e8e74fe5b2786071d41552712adc306b);
+        
+    
+        var popup_a0be753b7f654bea86eb703044f9a8ad = L.popup({
+  "maxWidth": "100%",
+  "autoClose": null,
+  "closeOnClick": null,
+});
+
+        
+            
+                var html_e7531ebfd9d105f99d728723060b2bbb = $(`<div id="html_e7531ebfd9d105f99d728723060b2bbb" style="width: 100.0%; height: 100.0%;">Area Name: Hollywood, Cluster: 4</div>`)[0];
+                popup_a0be753b7f654bea86eb703044f9a8ad.setContent(html_e7531ebfd9d105f99d728723060b2bbb);
+            
+        
+
+        marker_98ec9f0ee164ed66edb5c24778a8292d.bindPopup(popup_a0be753b7f654bea86eb703044f9a8ad)
+        ;
+
+        
+    
+    
+            var marker_c689175c6f5a61d9a9f90b185d78ef71 = L.marker(
+                [34.25591127330848, -118.45055410761853],
+                {
+  "draggable": null,
+  "autoPan": null,
+}
+            ).addTo(map_4caaab6bb371d1720f249072f2f7c13d);
+        
+    
+            var icon_b830394d3824dbc6323c5d6b1370d933 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "black",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_c689175c6f5a61d9a9f90b185d78ef71.setIcon(icon_b830394d3824dbc6323c5d6b1370d933);
+        
+    
+        var popup_b44263378a970ffc52c6bbdbc4209966 = L.popup({
+  "maxWidth": "100%",
+  "autoClose": null,
+  "closeOnClick": null,
+});
+
+        
+            
+                var html_c954bf8cd0facaa2c8110bb7da62d298 = $(`<div id="html_c954bf8cd0facaa2c8110bb7da62d298" style="width: 100.0%; height: 100.0%;">Area Name: Mission, Cluster: 3</div>`)[0];
+                popup_b44263378a970ffc52c6bbdbc4209966.setContent(html_c954bf8cd0facaa2c8110bb7da62d298);
+            
+        
+
+        marker_c689175c6f5a61d9a9f90b185d78ef71.bindPopup(popup_b44263378a970ffc52c6bbdbc4209966)
+        ;
+
+        
+    
+    
+            var marker_1c766cf5556149615fb24ea00a3539d0 = L.marker(
+                [34.1715846268375, -118.38465794031916],
+                {
+  "draggable": null,
+  "autoPan": null,
+}
+            ).addTo(map_4caaab6bb371d1720f249072f2f7c13d);
+        
+    
+            var icon_d59df67e2709e7f4c00c86a44bd87ea8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_1c766cf5556149615fb24ea00a3539d0.setIcon(icon_d59df67e2709e7f4c00c86a44bd87ea8);
+        
+    
+        var popup_587f39d57287ad1063f9f5fd540057e8 = L.popup({
+  "maxWidth": "100%",
+  "autoClose": null,
+  "closeOnClick": null,
+});
+
+        
+            
+                var html_16def0aebf7a504d9220ccc2f0990fd2 = $(`<div id="html_16def0aebf7a504d9220ccc2f0990fd2" style="width: 100.0%; height: 100.0%;">Area Name: N Hollywood, Cluster: 1</div>`)[0];
+                popup_587f39d57287ad1063f9f5fd540057e8.setContent(html_16def0aebf7a504d9220ccc2f0990fd2);
+            
+        
+
+        marker_1c766cf5556149615fb24ea00a3539d0.bindPopup(popup_587f39d57287ad1063f9f5fd540057e8)
+        ;
+
+        
+    
+    
+            var marker_12175997a9d7da9ca602cb81bdce22ea = L.marker(
+                [34.00938715354348, -118.26058574393566],
+                {
+  "draggable": null,
+  "autoPan": null,
+}
+            ).addTo(map_4caaab6bb371d1720f249072f2f7c13d);
+        
+    
+            var icon_5f85f420e2f4b949590fa3dca86bbb80 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "black",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_12175997a9d7da9ca602cb81bdce22ea.setIcon(icon_5f85f420e2f4b949590fa3dca86bbb80);
+        
+    
+        var popup_7fb213df5284920154961c9fc0e5007e = L.popup({
+  "maxWidth": "100%",
+  "autoClose": null,
+  "closeOnClick": null,
+});
+
+        
+            
+                var html_4d96fc0ac97ebfb8538462c520e74bf5 = $(`<div id="html_4d96fc0ac97ebfb8538462c520e74bf5" style="width: 100.0%; height: 100.0%;">Area Name: Newton, Cluster: 3</div>`)[0];
+                popup_7fb213df5284920154961c9fc0e5007e.setContent(html_4d96fc0ac97ebfb8538462c520e74bf5);
+            
+        
+
+        marker_12175997a9d7da9ca602cb81bdce22ea.bindPopup(popup_7fb213df5284920154961c9fc0e5007e)
+        ;
+
+        
+    
+    
+            var marker_6bcf1131ff5519a3c463acb1df6b2166 = L.marker(
+                [34.10714694305695, -118.24520767982018],
+                {
+  "draggable": null,
+  "autoPan": null,
+}
+            ).addTo(map_4caaab6bb371d1720f249072f2f7c13d);
+        
+    
+            var icon_1b9e0146ad63bc17bc46d3a311a78e95 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_6bcf1131ff5519a3c463acb1df6b2166.setIcon(icon_1b9e0146ad63bc17bc46d3a311a78e95);
+        
+    
+        var popup_b0c00e1935cea73aa191fe599d1e4817 = L.popup({
+  "maxWidth": "100%",
+  "autoClose": null,
+  "closeOnClick": null,
+});
+
+        
+            
+                var html_a18b4f7d8f9f445e731dfbdb38335c8a = $(`<div id="html_a18b4f7d8f9f445e731dfbdb38335c8a" style="width: 100.0%; height: 100.0%;">Area Name: Northeast, Cluster: 0</div>`)[0];
+                popup_b0c00e1935cea73aa191fe599d1e4817.setContent(html_a18b4f7d8f9f445e731dfbdb38335c8a);
+            
+        
+
+        marker_6bcf1131ff5519a3c463acb1df6b2166.bindPopup(popup_b0c00e1935cea73aa191fe599d1e4817)
+        ;
+
+        
+    
+    
+            var marker_5e33fba72f6cdfb5ea86f0bedd1307af = L.marker(
+                [34.06011890939205, -118.30042613976599],
+                {
+  "draggable": null,
+  "autoPan": null,
+}
+            ).addTo(map_4caaab6bb371d1720f249072f2f7c13d);
+        
+    
+            var icon_2dd677edc15fa45b186287d31152617a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_5e33fba72f6cdfb5ea86f0bedd1307af.setIcon(icon_2dd677edc15fa45b186287d31152617a);
+        
+    
+        var popup_85c0426635dc0cded07525d98878df34 = L.popup({
+  "maxWidth": "100%",
+  "autoClose": null,
+  "closeOnClick": null,
+});
+
+        
+            
+                var html_8686f74fef881b7257587fb879637f6b = $(`<div id="html_8686f74fef881b7257587fb879637f6b" style="width: 100.0%; height: 100.0%;">Area Name: Olympic, Cluster: 0</div>`)[0];
+                popup_85c0426635dc0cded07525d98878df34.setContent(html_8686f74fef881b7257587fb879637f6b);
+            
+        
+
+        marker_5e33fba72f6cdfb5ea86f0bedd1307af.bindPopup(popup_85c0426635dc0cded07525d98878df34)
+        ;
+
+        
+    
+    
+            var marker_4ffd9dd492e72aec7651ecc5d8b16c17 = L.marker(
+                [33.98415076221188, -118.42414110813881],
+                {
+  "draggable": null,
+  "autoPan": null,
+}
+            ).addTo(map_4caaab6bb371d1720f249072f2f7c13d);
+        
+    
+            var icon_45e1892a50e7b8812b4cd0b6eeb58da0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_4ffd9dd492e72aec7651ecc5d8b16c17.setIcon(icon_45e1892a50e7b8812b4cd0b6eeb58da0);
+        
+    
+        var popup_c82122213f87beb84f32cbc33b5d7b87 = L.popup({
+  "maxWidth": "100%",
+  "autoClose": null,
+  "closeOnClick": null,
+});
+
+        
+            
+                var html_ff281c3937a7a47f5ddbfdd1e079beb4 = $(`<div id="html_ff281c3937a7a47f5ddbfdd1e079beb4" style="width: 100.0%; height: 100.0%;">Area Name: Pacific, Cluster: 4</div>`)[0];
+                popup_c82122213f87beb84f32cbc33b5d7b87.setContent(html_ff281c3937a7a47f5ddbfdd1e079beb4);
+            
+        
+
+        marker_4ffd9dd492e72aec7651ecc5d8b16c17.bindPopup(popup_c82122213f87beb84f32cbc33b5d7b87)
+        ;
+
+        
+    
+    
+            var marker_8eb88732fadd86cf697e189058a1569c = L.marker(
+                [34.06354439860653, -118.27417657911623],
+                {
+  "draggable": null,
+  "autoPan": null,
+}
+            ).addTo(map_4caaab6bb371d1720f249072f2f7c13d);
+        
+    
+            var icon_6f579d7684edf81d307cad7efc5ea399 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_8eb88732fadd86cf697e189058a1569c.setIcon(icon_6f579d7684edf81d307cad7efc5ea399);
+        
+    
+        var popup_661a30c02cd4aef96ff61735efb99909 = L.popup({
+  "maxWidth": "100%",
+  "autoClose": null,
+  "closeOnClick": null,
+});
+
+        
+            
+                var html_c1ebc80490271fb707ad9579441bcae2 = $(`<div id="html_c1ebc80490271fb707ad9579441bcae2" style="width: 100.0%; height: 100.0%;">Area Name: Rampart, Cluster: 0</div>`)[0];
+                popup_661a30c02cd4aef96ff61735efb99909.setContent(html_c1ebc80490271fb707ad9579441bcae2);
+            
+        
+
+        marker_8eb88732fadd86cf697e189058a1569c.bindPopup(popup_661a30c02cd4aef96ff61735efb99909)
+        ;
+
+        
+    
+    
+            var marker_d8a27badd6ad1be2c0b30e5ccbc2cf3f = L.marker(
+                [33.938926223170526, -118.26716959185397],
+                {
+  "draggable": null,
+  "autoPan": null,
+}
+            ).addTo(map_4caaab6bb371d1720f249072f2f7c13d);
+        
+    
+            var icon_785c700c6e55e3006d9295e8cb880a95 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_d8a27badd6ad1be2c0b30e5ccbc2cf3f.setIcon(icon_785c700c6e55e3006d9295e8cb880a95);
+        
+    
+        var popup_5e5458bd9743b6141a80198f6f686093 = L.popup({
+  "maxWidth": "100%",
+  "autoClose": null,
+  "closeOnClick": null,
+});
+
+        
+            
+                var html_0c8a68f4706f328a6048278ea7306a2b = $(`<div id="html_0c8a68f4706f328a6048278ea7306a2b" style="width: 100.0%; height: 100.0%;">Area Name: Southeast, Cluster: 2</div>`)[0];
+                popup_5e5458bd9743b6141a80198f6f686093.setContent(html_0c8a68f4706f328a6048278ea7306a2b);
+            
+        
+
+        marker_d8a27badd6ad1be2c0b30e5ccbc2cf3f.bindPopup(popup_5e5458bd9743b6141a80198f6f686093)
+        ;
+
+        
+    
+    
+            var marker_afb87a3ff9fd2b99c18dcc3c8f39167b = L.marker(
+                [34.02010914902418, -118.31641137141352],
+                {
+  "draggable": null,
+  "autoPan": null,
+}
+            ).addTo(map_4caaab6bb371d1720f249072f2f7c13d);
+        
+    
+            var icon_ffc8387bc4f631ff39e446ee4568c3cc = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_afb87a3ff9fd2b99c18dcc3c8f39167b.setIcon(icon_ffc8387bc4f631ff39e446ee4568c3cc);
+        
+    
+        var popup_2825918b35ecee9dd9930f38257f4338 = L.popup({
+  "maxWidth": "100%",
+  "autoClose": null,
+  "closeOnClick": null,
+});
+
+        
+            
+                var html_37093b85f83fb53974d6173b3227b59c = $(`<div id="html_37093b85f83fb53974d6173b3227b59c" style="width: 100.0%; height: 100.0%;">Area Name: Southwest, Cluster: 2</div>`)[0];
+                popup_2825918b35ecee9dd9930f38257f4338.setContent(html_37093b85f83fb53974d6173b3227b59c);
+            
+        
+
+        marker_afb87a3ff9fd2b99c18dcc3c8f39167b.bindPopup(popup_2825918b35ecee9dd9930f38257f4338)
+        ;
+
+        
+    
+    
+            var marker_0c482c4c892f8a1307adc889a3e1cdcf = L.marker(
+                [34.19211833251695, -118.60108702982804],
+                {
+  "draggable": null,
+  "autoPan": null,
+}
+            ).addTo(map_4caaab6bb371d1720f249072f2f7c13d);
+        
+    
+            var icon_05259bd53418e8c5b140ded5bc4b9e6b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_0c482c4c892f8a1307adc889a3e1cdcf.setIcon(icon_05259bd53418e8c5b140ded5bc4b9e6b);
+        
+    
+        var popup_5bf4af5ab2d2cd567b340c054c748aef = L.popup({
+  "maxWidth": "100%",
+  "autoClose": null,
+  "closeOnClick": null,
+});
+
+        
+            
+                var html_9ee9eee4497fcb26a7d141868015d308 = $(`<div id="html_9ee9eee4497fcb26a7d141868015d308" style="width: 100.0%; height: 100.0%;">Area Name: Topanga, Cluster: 1</div>`)[0];
+                popup_5bf4af5ab2d2cd567b340c054c748aef.setContent(html_9ee9eee4497fcb26a7d141868015d308);
+            
+        
+
+        marker_0c482c4c892f8a1307adc889a3e1cdcf.bindPopup(popup_5bf4af5ab2d2cd567b340c054c748aef)
+        ;
+
+        
+    
+    
+            var marker_69394a10755ae07ac35af4a794266e7c = L.marker(
+                [34.1786690821256, -118.44717757109419],
+                {
+  "draggable": null,
+  "autoPan": null,
+}
+            ).addTo(map_4caaab6bb371d1720f249072f2f7c13d);
+        
+    
+            var icon_1bdcd9c45f6eb59049e9907727c986f9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_69394a10755ae07ac35af4a794266e7c.setIcon(icon_1bdcd9c45f6eb59049e9907727c986f9);
+        
+    
+        var popup_666f6cbc79d38cf79ab9d7d748b535fe = L.popup({
+  "maxWidth": "100%",
+  "autoClose": null,
+  "closeOnClick": null,
+});
+
+        
+            
+                var html_4f98a38d172fbd14eb1467600fe4b517 = $(`<div id="html_4f98a38d172fbd14eb1467600fe4b517" style="width: 100.0%; height: 100.0%;">Area Name: Van Nuys, Cluster: 1</div>`)[0];
+                popup_666f6cbc79d38cf79ab9d7d748b535fe.setContent(html_4f98a38d172fbd14eb1467600fe4b517);
+            
+        
+
+        marker_69394a10755ae07ac35af4a794266e7c.bindPopup(popup_666f6cbc79d38cf79ab9d7d748b535fe)
+        ;
+
+        
+    
+    
+            var marker_bfb7cbac9ed196bb1af151d0b7fbfb71 = L.marker(
+                [34.05158014611488, -118.44057295240763],
+                {
+  "draggable": null,
+  "autoPan": null,
+}
+            ).addTo(map_4caaab6bb371d1720f249072f2f7c13d);
+        
+    
+            var icon_ba9943ae561b0634e53c2d0b24c012bc = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_bfb7cbac9ed196bb1af151d0b7fbfb71.setIcon(icon_ba9943ae561b0634e53c2d0b24c012bc);
+        
+    
+        var popup_f853c97a17b1aba679fed3904c35d1eb = L.popup({
+  "maxWidth": "100%",
+  "autoClose": null,
+  "closeOnClick": null,
+});
+
+        
+            
+                var html_e295e8d5107df30c0ce9e1eaf2f43a77 = $(`<div id="html_e295e8d5107df30c0ce9e1eaf2f43a77" style="width: 100.0%; height: 100.0%;">Area Name: West LA, Cluster: 4</div>`)[0];
+                popup_f853c97a17b1aba679fed3904c35d1eb.setContent(html_e295e8d5107df30c0ce9e1eaf2f43a77);
+            
+        
+
+        marker_bfb7cbac9ed196bb1af151d0b7fbfb71.bindPopup(popup_f853c97a17b1aba679fed3904c35d1eb)
+        ;
+
+        
+    
+    
+            var marker_fd5095123a8bddf9e207d13a6502f953 = L.marker(
+                [34.18719336696281, -118.52076262109121],
+                {
+  "draggable": null,
+  "autoPan": null,
+}
+            ).addTo(map_4caaab6bb371d1720f249072f2f7c13d);
+        
+    
+            var icon_134148d33356d4bc20a58524afb62de7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_fd5095123a8bddf9e207d13a6502f953.setIcon(icon_134148d33356d4bc20a58524afb62de7);
+        
+    
+        var popup_ad8fb0c040750e9c3025210bb24d99e6 = L.popup({
+  "maxWidth": "100%",
+  "autoClose": null,
+  "closeOnClick": null,
+});
+
+        
+            
+                var html_817d140236143cc4e4f3b62bfb3c2dd6 = $(`<div id="html_817d140236143cc4e4f3b62bfb3c2dd6" style="width: 100.0%; height: 100.0%;">Area Name: West Valley, Cluster: 1</div>`)[0];
+                popup_ad8fb0c040750e9c3025210bb24d99e6.setContent(html_817d140236143cc4e4f3b62bfb3c2dd6);
+            
+        
+
+        marker_fd5095123a8bddf9e207d13a6502f953.bindPopup(popup_ad8fb0c040750e9c3025210bb24d99e6)
+        ;
+
+        
+    
+    
+            var marker_b149c01a7083eef99f352a16b6ad378d = L.marker(
+                [34.0618047298352, -118.35206749548423],
+                {
+  "draggable": null,
+  "autoPan": null,
+}
+            ).addTo(map_4caaab6bb371d1720f249072f2f7c13d);
+        
+    
+            var icon_114766fa1a36f8b3a1cff3ea5b08c54c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_b149c01a7083eef99f352a16b6ad378d.setIcon(icon_114766fa1a36f8b3a1cff3ea5b08c54c);
+        
+    
+        var popup_51192940376ae583edd1fb1e94b07ea2 = L.popup({
+  "maxWidth": "100%",
+  "autoClose": null,
+  "closeOnClick": null,
+});
+
+        
+            
+                var html_6936330b992c49154e5f5592d1f79a95 = $(`<div id="html_6936330b992c49154e5f5592d1f79a95" style="width: 100.0%; height: 100.0%;">Area Name: Wilshire, Cluster: 4</div>`)[0];
+                popup_51192940376ae583edd1fb1e94b07ea2.setContent(html_6936330b992c49154e5f5592d1f79a95);
+            
+        
+
+        marker_b149c01a7083eef99f352a16b6ad378d.bindPopup(popup_51192940376ae583edd1fb1e94b07ea2)
+        ;
+
+        
+    
+</script>
+</html>
