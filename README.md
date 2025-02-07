@@ -22,7 +22,7 @@ By combining **statistical methods, clustering algorithms, and predictive modeli
 
 ## **Tools & Technologies**  
 ✅ **Programming Languages**: Python  
-✅ **Libraries & Frameworks**: Pandas, NumPy, Matplotlib, Plotly, Cartopy, NetCDF, Networkx  
+✅ **Libraries & Frameworks**: Pandas, Tableau, Matplotlib, Plotly, Cartopy, NetCDF, Networkx  
 ✅ **Machine Learning**: Prophet, K-Means, PCA  
 ✅ **Visualization Tools**: Tableau, Plotly
 
